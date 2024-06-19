@@ -7,10 +7,7 @@ docker run -it --rm -v ${PWD}:/data factors_flask_tester
 
 # RUN DEBUG - GOOD
 
-docker build -t factors_flask:debug -f Dockerfile.debug --build-arg BaseImage=factors_flask_pdb .
+docker build -t factors_flask_debug -f Dockerfile.debug --build-arg BaseImage=factors_flask_pdb .
 
-docker run -it --rm -p 5000:5000 factors_flask:debug
+docker run -it --rm -p 5000:5000 factors_flask_debug
 
-http://127.0.0.1:5000/32345678
-
-http://127.0.0.1:5000/12345678
