@@ -3,4 +3,3 @@ pylint-json2html
 pytest
 pytest-cov
 pytest-html
-q  

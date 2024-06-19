@@ -1,5 +1,7 @@
 Build a Flask Docker image that is then used as a base for a PyTest Docker image that runs tests in a container as well as enabling a PDB breakpoint to be used.
 
+[YouTube Video](https://youtu.be/Jsf5S8cZj1Y)
+
 Inspired by [Python in Containers](https://www.udemy.com/course/python-in-containers/) (wait for sale to get for around $20 USD). Updated and modified by me for this repo.
 
 - use of -f flag for Dockerfiles
@@ -46,7 +48,7 @@ You can CTRL+C to close.
 
 - `docker build -t factors_flask_debug -f Dockerfile.debug --build-arg BaseImage=factors_flask_pdb .` Yo will see 
 
-- `docker run -it --rm -p 5000:5000 factors_flask:debug` runs PDB debugger. `debub\.pdbrc` has two breakpoints set:
+- `docker run -it --rm -p 5000:5000 factors_flask_debug` runs PDB debugger. `debub\.pdbrc` has two breakpoints set:
 
 ```
 b 22
