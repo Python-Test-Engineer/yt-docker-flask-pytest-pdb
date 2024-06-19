@@ -10,10 +10,9 @@ docker run -it --rm -p 5000:5000 factors_flask:debug -->
 
 # RUN TESTS - GOOD
 
-docker build -t factors_flask:tester -f Dockerfile.tester --build-arg BaseImage=factors_flask_pdb .
+docker build -t factors_flask_tester -f Dockerfile.tester --build-arg BaseImage=factors_flask_pdb .
 
-docker run -it --rm -v ${PWD}:/data factors_flask:tester
-
+docker run -it --rm -v ${PWD}:/data factors_flask_tester
 
 # RUN DEBUG - GOOD
 
