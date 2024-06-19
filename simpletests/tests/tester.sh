@@ -15,5 +15,5 @@ echo "-------------------------------------------------------------------"
 echo
 echo "Running pytest"
 echo
-pytest -v --html=$OUTPUT_FOLDER/pytest_report.html --cov=factors_flask --cov-report annotate --cov-report html
+pytest -v --html=$OUTPUT_FOLDER/pytest_report.html --cov=factors_flask --cov-report annotate --cov-report html --disable-warnings
 cp -r htmlcov $OUTPUT_FOLDER
